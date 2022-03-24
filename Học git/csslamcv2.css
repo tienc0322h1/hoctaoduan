@@ -1,13 +1,18 @@
 h1{
-    margin-left: 590px;
+    margin-left: 390px;
     color: blue;
 }
 h2{
-    margin-left: 590px;
+    margin-left: 390px;
 }
 body{
-    padding: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 h6{
     margin-left: 200px;
+}
+hr{
+    margin-left: 30px;
+    margin-right: 320px;
 }
