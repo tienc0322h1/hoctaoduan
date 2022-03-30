@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
 <form>
-    <img src="../Images/ball.jpg" width="200px" height="200px" id="bongda"
-         style="position: absolute; top: 100px; left: 100px">
-    <input type="button" onclick="xoay()" value="clickme">
+    <img id="myImage" src="../Images/ball.jpg">
+    <p>Please click the button below to move the ball</p>
+    <input type="button" onclick="moveRight()" value="Click me">
     <script>
-        let xoaybong = document.getElementById("bongda");
+        let imgObj = "";
+        imgObj = document.getElementById("myImage");
 
-        function xoay() {
-            xoaybong.style.left = parseInt(xoaybong.style.left) + 30 + "px";
+        function init() {
+            imgObj = document.getElementById("myImage")
+            imgObj.style.position = "relative";
+            imgObj.style.left = "0px";
+        }
 
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + "px";
+            window.onload = init();
         }
     </script>
 
