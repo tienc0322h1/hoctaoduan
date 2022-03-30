@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="../Images/frog.png" height="200px" width="200PX" style="position: absolute; left: 20px; top: 20px" id="coc">
+<button type="button" onclick="nhaycoc()" style="position: absolute; left: 10px; top: 10px">Click me</button>
+
+<script>
+    let cocnhay = document.getElementById("coc");
+
+    function nhaycoc() {
+        cocnhay.style.left = parseInt(cocnhay.style.left) + 50 + "px";
+
+    }
+</script>
+</body>
+
+</html>

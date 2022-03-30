@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nam = parseInt(prompt("nhap nam"));
+    let lanamNhuan = false;
+    let namC4 = nam % 4 == 0;
+    if (namC4) {
+        let namC100 = nam % 100 == 0;
+        if (namC100) {
+            let namC400 = nam % 400 == 0;
+            if (namC400) {
+                lanamNhuan = true;
+            }
+        }
+        else {
+            lanamNhuan = true;
+        }
+    }
+    if (lanamNhuan) {
+        alert("la nam nhuan")
+    }
+    else {
+        alert("khong phai la nam nhuan")
+    }
+
+
+</script>
+</body>
+</html>

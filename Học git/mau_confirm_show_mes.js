@@ -1,0 +1,1 @@
+confirm("Nhấn nút xác nhận");

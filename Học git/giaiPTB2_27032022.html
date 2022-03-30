@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="thamsoA">
+<label>X2 +</label>
+<input type="number" id="thamsoB">
+<label>X +</label>
+<input type="number" id="thamsoC">
+<button type="submit" id="kq">Kết quả</button>
+</body>
+<script>
+    let n = document.getElementById("kq");
+    n.addEventListener("click", giaiptb2);
+
+    function giaiptb2() {
+        let B = document.getElementById("thamsoB").value;
+        let A = document.getElementById("thamsoA").value;
+        let C = document.getElementById("thamsoC").value;
+        let delta = B * B - 4 * A * C;
+        let x0 = -B/(2*A);
+        let x1, x2;
+        if (delta == 0) {
+            document.write("nghiệm kép là: " + x0);
+        }
+        if (delta > 0) {
+            x1 = (-B + Math.sqrt(delta)) / (2 * A);
+            x2 = (-B - Math.sqrt(delta)) / (2 * A);
+            document.write("nghiệm x1 là: " + x1 + ", nghiệm x2 là: " + x2);
+        }
+        if (delta <0) {
+            document.write("phương trình vô nghiệm")
+        }
+
+    }
+
+</script>
+</html>

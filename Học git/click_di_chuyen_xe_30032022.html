@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="../Images/caricon1.jpg" style="position: absolute; left: 0px; top: 30px" id="caricon">
+<input type="button" onclick="go()" value="Click Me" style="position: absolute; top: 200px">
+<script>
+    let chayxe = document.getElementById("caricon");
+
+    function go() {
+        chayxe.style.left = parseInt(chayxe.style.left) + 30 + "px";
+    }
+</script>
+</body>
+</html>
