@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<button id="Y" type="submit" style="position: absolute; left: 70px" onclick="yesOK()">Yes</button>
+<button id="N" type="button" style="position: absolute; left: 150px; top: 80px" onmouseover="notOK()">No</button>
+
+<script>
+    let moveNO = document.getElementById("N");
+    function yesOK() {
+        let showYes = document.addEventListener("click", yesOK);
+        document.write("<3");
+    }
+    function notOK() {
+        let moveNOletf = moveNO.style.left;
+        let xleftMove = Math.random()*window.innerWidth;
+        let xrightMove  = Math.random()*window.innerHeight;
+        moveNO.style.left = parseInt(xleftMove) + "px";
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -6,12 +6,15 @@
 </head>
 <body>
 <img src="../Images/caricon1.jpg" style="position: absolute; left: 0px; top: 30px" id="caricon">
-<input type="button" onclick="go()" value="Click Me" style="position: absolute; top: 200px">
+<input type="button" onmouseover="go()" value="Click Me" style="position: absolute; top: 200px">
 <script>
     let chayxe = document.getElementById("caricon");
 
     function go() {
-        chayxe.style.left = parseInt(chayxe.style.left) + 30 + "px";
+        let widthMove   = Math.random()*window.innerWidth;
+        let topMove = Math.random()*window.top
+        chayxe.style.left = parseInt(chayxe.style.left) + parseInt(widthMove) + "px";
+        chayxe.style.top = parseInt(chayxe.style.top) + parseInt(topMove) + "px";
     }
     window.onload = go();
 </script>
