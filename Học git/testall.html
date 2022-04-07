@@ -5,11 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+<button >ket qua</button>
+<button id="x" onclick="convertAllArrstoZero()"></button>
 <script>
-    for (let i = 1, j= 10; i<=10; i++, j--) {
-        let Tongij = i+j;
-        document.write("" + i + " x " + j + " = " + i*j + "<br>")
+    let arrs2 =
+        [
+            [1, 2, 3, 0, 5, 6, 7, 5],//0-
+            [2, 3, 4, 5, 6, 0, 7, 8],
+            [4, 5, 6, 7, 8, 9, 4, 2]
+        ]
+
+    function convertAllArrstoZero() {
+        let a=""
+        for (let i = 0; i <arrs2.length; i++) {
+            arrs2[i][arrs2[i].length -1] = 0
+            console.log(arrs2[i])
+            document.getElementById("x").innerHTML +=arrs2[i]+"<br>"
+        }
+
     }
+
 </script>
 </body>
 
