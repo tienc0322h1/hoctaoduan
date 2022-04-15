@@ -9,6 +9,7 @@ function getArray2Position() {
             break;
         } else {
             alert("no data Constellation");
+            break;
         }
     }
 }
