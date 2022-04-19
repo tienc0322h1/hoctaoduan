@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+
 </head>
 <body>
+<label>Please fill infomation to add to list</label>
+<table>
+    <tr>
+        <td>Name</td>
+        <td><input id="idName"></td>
+
+    </tr>
+    <tr>
+        <td>Color</td>
+        <td><input id="idColor"></td>
+    </tr>
+    <tr>
+        <td>Taste</td>
+        <td><input id="idTaste"></td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td><input id="idWeight"></td>
+        <td><input id="index" type="text" hidden></td>
+    </tr>
+    <tr>
+        <td><button id="addProductConfirm" onclick="getProductInfo()">Add</button></td>
+        <td><button id="idSubmitModify" onclick="submitModify()">summitModify</button></td>
+    </tr>
+</table>
 
 <table border="1px">
     <tr>
+        <th>No</th>
         <th>name</th>
         <th>color</th>
         <th>taste</th>
         <th>weight</th>
-        <th>addNewProduct</th>
     </tr>
-    <tr>
-        <td><input type="text" id="inputName"></td>
-        <td><input type="text" id="inputColor"></td>
-        <td><input type="text" id="inputTaste"></td>
-        <td><input type="text" id="inputWeight"></td>
-        <td><button type="button" id="confirmAddNewProduct" onclick="GetProductInfor()">Add</button></td>
-
-    </tr>
+    <tbody id="idListProduct">
+    </tbody>
 </table>
-<script src="./main.js"></script>
-<script src="./method/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
