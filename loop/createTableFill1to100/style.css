@@ -1,0 +1,7 @@
+.borderTable {
+    border: 1px solid black; width: 300px; border-spacing: 2px; padding: 3px;
+}
+.borderTable td{
+    border: 1px solid black;
+
+}

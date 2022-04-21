@@ -1,32 +1,30 @@
-let object7={
+
+
+let object8={
      name:"Thanh",
-     age:27,
+     age:"27",
      height :"1m63",
      school : "codegym",
-     getName: function() {
-          return this.name
-     }
-       getAge: function(name){
-          return this.age=name
-          console.log(name)
-     }
-     getHeight: function () {
-          return this.height;
-     }
-     getSchool: function () {
-          return this.school;
-     }
 }
-console.log(object7.getAge())
-let object1={
+
+let object3={
      name:"Tien",
      age:35,
      height :"1m73",
      school : "codegym",
      experience: "3_year"
 }
-object7.getName()
-console.log(object7)
+function ageCompare(c, d) {
+     let a = +(c.age);
+     let b = +(d.name);
+     if (a>b) {
+          alert(c.name)
+     }
+     else {
+          alert(d.name)
+     }
+}
+ageCompare(object3,object8);
 
 //1. hiển thị từng   thuộc tính trong object và object1
 //2. hay in ra  tên người có số tuổi lơn hơn.

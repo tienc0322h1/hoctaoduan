@@ -1,7 +1,7 @@
 class Student {
     constructor(name, birthDate, gender, major, startDate) {
         this._name = name;
-        this._birthdate = birthDate;
+        this._birthDate = birthDate;
         this._gender = gender;
         this._major = major;
         this._startDate = startDate;
@@ -12,7 +12,7 @@ class Student {
     }
 
     getBirthDate() {
-        return this._birthdate;
+        return this._birthDate;
     }
 
     getGender() {
@@ -25,5 +25,20 @@ class Student {
 
     getStartDate() {
         return this._startDate;
+    }
+    setName(name) {
+        this._name = name;
+    }
+    setBirthDate(birthDate) {
+        this._birthDate = birthDate
+    }
+    setGender(gender) {
+        this._gender = gender;
+    }
+    setMajor(major) {
+        this._major = major;
+    }
+    setStartDate(startDate) {
+        this._startDate = startDate;
     }
 }

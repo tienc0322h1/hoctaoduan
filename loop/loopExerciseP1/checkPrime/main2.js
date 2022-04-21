@@ -1,3 +1,4 @@
+let num = parseInt(document.getElementById("inputNumber"))
 function checktPrimeNumber(num) {
     let a = 0;
     let i = 1;
@@ -18,5 +19,7 @@ function printPrimeListnumber(num) {
             console.log(i)
         }
     }
-}printPrimeListnumber(10)
+}printPrimeListnumber(num);
+console.log(printPrimeListnumber(num));
+
 

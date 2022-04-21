@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <lable>Fill student's information to add list below</lable>
 <table>
     <tr>
         <td>Name</td>
-        <td><input id="iptname"></td>
+        <td><input id="idName"></td>
     </tr>
     <tr>
         <td>Birth Date</td>
-        <td><input id="ipBirthDate"></td>
+        <td><input type="date" id="idBirthDate"></td>
     </tr>
     <tr>
         <td>Gender</td>
-        <td><input id="ipGender"></td>
+        <td><select name="" id="idGender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select></td>
     </tr>
     <tr>
         <td>Major</td>
-        <td><input id="iptMajor"></td>
+        <td><input id="idMajor"></td>
     </tr>
     <tr>
         <td>Start Date</td>
-        <td><input id="iptStartDate"></td>
+        <td><input type="date" id="idStartDate"></td>
     </tr>
     <tr>
         <td></td>
-        <td><button type="button" id="confirmAddStudendInfo">Add to list</button></td>
+        <td><button type="button" id="confirmAddStudendInfo" onclick="getStudentInfo()">Add to list</button></td>
     </tr>
 </table>
 <div>
     <br>
     <table border="1px">
         <tr>
+            <th>No</th>
             <th>Name</th>
             <th>Birth Date</th>
             <th>Gender</th>
             <th>Major</th>
             <th>Start Date</th>
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <tbody id="listStudents">
+        </tbody>
     </table>
 </div>
+<script src="Student.js"></script>
+<script src="StudentManage.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
