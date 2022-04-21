@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<p>Nhập thông tin sách</p>
+<table>
+    <tr>
+        <td>Nhập vào mã số sách</td>
+        <td><input id="idCode"></td>
+    </tr>
+    <tr>
+        <td>Nhập vào tên sách</td>
+        <td><input id="idName"></td>
+    </tr>
+    <tr>
+        <td>Nhập vào năm xuất bản</td>
+        <td><input id="idYearEx"></td>
+    </tr>
+    <tr>
+        <td>Nhập vào số lượng</td>
+        <td><input id="idQuantity"></td>
+    </tr>
+    <tr>
+        <td>Nhập vào tình trạng</td>
+        <td><select name="" id="idStatus">
+            <option value=""></option>
+            <option value="Còn" id="yesStatus">Còn</option>
+            <option value="Hết" id="noStatus">Hết</option>
+        </select>
+        </td>
+    </tr>
+
+</table>
+<br>
+<br>
+<table border="1" cellspacing="0" cellpadding="3" >
+    <tr>
+        <th>Mã số sách</th>
+        <th>Tên sách</th>
+        <th>Năm xuất bản</th>
+        <th>Số quyền</th>
+        <th>Tình trạng</th>
+    </tr>
+    <tbody  id="showListB">
+    </tbody>
+</table>
+<br>
+<br>
+<table>
+    <tr>
+        <td><button>Thêm sách đã có</button></td>
+        <td><button id="idAddNewBook" onclick="addBookInfo()">Thêm sách mới</button></td>
+        <td><button>Mượn sách</button></td>
+        <td><button onclick="compareQuantity()">Hiển thị sách nhiều nhất</button></td>
+    </tr>
+</table>
+<script src="main.js"></script>
+</body>
+</html>
