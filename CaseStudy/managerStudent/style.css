@@ -1,0 +1,46 @@
+h2 {
+    margin-top: 50px;
+    margin-left: 376px;
+}
+label {
+    font-weight: bold;
+}
+.styleInput {
+    background: bisque;
+    width: 280px;
+    height: 160px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 413px;
+    margin-top: 42px;
+}
+.tableInputStyle{
+    margin-left: 10px;
+}
+.listStudentStyle{
+    width: 700px;
+    color: darkblue;
+    left: 50px;
+    margin-top: 30px;
+    margin-left: 307px;
+}
+.list-student{
+    border: 1px rebeccapurple solid;
+    border-collapse: collapse;
+    width: 500px;
+    background-color: aqua;
+}
+.list-student>tbody>tr>td{
+    margin: 0;
+    border: 1px rebeccapurple solid;
+
+}
+.list-student>tbody>tr>th{
+    border: 1px rebeccapurple solid;
+}
+label{
+    display: flex;
+    justify-content: center;
+}

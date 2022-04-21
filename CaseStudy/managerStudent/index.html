@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h2>STUDENT MANAGER SYSTEM </h2>
+<div class="styleInput">
+<label>Input student's infomation:</label>
+<table class="tableInputStyle">
+    <tr>
+        <td>Name</td>
+        <td><input id="idName"></td>
+    </tr>
+    <tr>
+        <td>BirthDate</td>
+        <td><input type="date" id="idBirthDate"/></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><select name="" id="idGender">
+            <option value=""></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>Major</td>
+        <td><input id="idMajor"></td>
+    </tr>
+    <tr>
+        <td><button id="add" onclick="addStudentInfo()">Add</button></td>
+        <td><button id="idSubmitModify" onclick="submitModifyStudent()">SubmitModify</button></td>
+    </tr>
+</table>
+</div>
+
+<div class ="listStudentStyle">
+<table class="list-student">
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>BirthDate</th>
+        <th>Gender</th>
+        <th>Major</th>
+    </tr>
+    <tbody id="listStudents">
+
+    </tbody>
+</table>
+</div>
+<script src="Student.js"></script>
+
+</body>
+</html>
