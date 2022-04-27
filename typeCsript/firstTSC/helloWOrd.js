@@ -1,10 +1,4 @@
-function showMessage(message: string): string {
-
+function showMessage(message) {
     return message;
-
-
 }
-
-
 console.log(showMessage('xin chao'));
-
